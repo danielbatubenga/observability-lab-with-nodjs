@@ -5,6 +5,8 @@
         "moduleResolution": "nodenext",
         "esModuleInterop": true,
         "strict": true,
-        "skipLibCheck": true
-    }
+        "skipLibCheck": true,
+        "types": ["node"] // 👈 para o TypeScript reconhecer o 'process'
+    },
+    "include": ["src/**/*", "prisma.config.ts"],
 }

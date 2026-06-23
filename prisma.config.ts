@@ -3,6 +3,10 @@
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
+// Provide a fallback declaration for 'process' when @types/node is not installed
+declare const process: { env: { [key: string]: string | undefined } };
+
+
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
